@@ -10,6 +10,7 @@
 		207500AC22D5A6060033588F /* Picky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207500A222D5A6060033588F /* Picky.framework */; };
 		207500B122D5A6060033588F /* PickyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207500B022D5A6060033588F /* PickyTests.swift */; };
 		207500B322D5A6060033588F /* Picky.h in Headers */ = {isa = PBXBuildFile; fileRef = 207500A522D5A6060033588F /* Picky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41BD11C422D5C86E005AE28A /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD11C322D5C86E005AE28A /* ImagePickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		207500AB22D5A6060033588F /* PickyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		207500B022D5A6060033588F /* PickyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyTests.swift; sourceTree = "<group>"; };
 		207500B222D5A6060033588F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BD11C322D5C86E005AE28A /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		207500A422D5A6060033588F /* Picky */ = {
 			isa = PBXGroup;
 			children = (
+				41BD11C222D5C856005AE28A /* ImagePicker */,
 				207500A522D5A6060033588F /* Picky.h */,
 				207500A622D5A6060033588F /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				207500B222D5A6060033588F /* Info.plist */,
 			);
 			path = PickyTests;
+			sourceTree = "<group>";
+		};
+		41BD11C222D5C856005AE28A /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				41BD11C322D5C86E005AE28A /* ImagePickerController.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					207500A122D5A6060033588F = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1000;
 					};
 					207500AA22D5A6060033588F = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BD11C422D5C86E005AE28A /* ImagePickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		207500B722D5A6060033588F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DivarApp.Picky;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		207500B822D5A6060033588F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +405,7 @@
 		207500BA22D5A6060033588F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PickyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +423,7 @@
 		207500BB22D5A6060033588F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PickyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
